@@ -1,0 +1,67 @@
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<div class="container">
+  <div class="upper-data">
+    <img src="../assets/sun.jpg" alt=".." *ngIf="14 > 15">
+    <img src="../assets/cold.jpg" alt=".." *ngIf="14 <=15">
+    <div class="weather-data">
+      <div class="location">India</div>
+        <div class="temperature">
+            {{19.40 | number: '1.0-0' }} °C
+        </div>
+    </div>
+  </div>
+  <div class="lower-data">
+    <div class="more-info">
+      More Information
+    </div>
+    <!-- more content -->
+    <div class="more-info-container">
+      <!-- info 1 -->
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/min.png" alt="" srcset="">
+          <span>Min</span>
+        </div>
+        <div class="info-block-value">
+          10°C
+        </div>
+      </div>
+      <!-- end info1 -->
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/max.png" alt="" srcset="">
+          <span>Max</span>
+        </div>
+        <div class="info-block-value">
+          20°C
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/Humidity.png" alt="" srcset="">
+          <span>Humidity</span>
+        </div>
+        <div class="info-block-value">
+          77°C
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="../assets/wind.png" alt="" srcset="">
+          <span>Wind</span>
+
+
+        </div>
+        <div class="info-block-value">
+          11 km/h
+        </div>
+      </div>
+    </div>
+    <!-- end more content -->
+  </div>
+</div>
+
+<router-outlet></router-outlet>
