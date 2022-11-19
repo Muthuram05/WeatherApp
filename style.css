@@ -13,8 +13,10 @@ body{
     height: 100vh;
     background-color:#3c429e; 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .container{
     width: 400px;

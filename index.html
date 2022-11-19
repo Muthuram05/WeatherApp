@@ -1,15 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+<div class="text-box">
+  <form action="#">
+    <input type="text">
+    <input type="button" value="submit">
+  </form>
+
+
+</div>  
+
 
 <div class="container">
   <div class="upper-data">
-    <img src="../assets/sun.jpg" alt=".." *ngIf="14 > 15">
-    <img src="../assets/cold.jpg" alt=".." *ngIf="14 <=15">
+    <img src="images/sun.jpg" alt=".." >
+    <img src="images/cold.jpg" alt="..">
     <div class="weather-data">
       <div class="location">India</div>
         <div class="temperature">
-            {{19.40 | number: '1.0-0' }} °C
+            19°C
         </div>
     </div>
   </div>
@@ -22,7 +38,7 @@
       <!-- info 1 -->
       <div class="info-block">
         <div class="info-block-label">
-          <img src="image/min.png" alt="" srcset="">
+          <img src="images/min.png" alt="" srcset="">
           <span>Min</span>
         </div>
         <div class="info-block-value">
@@ -32,7 +48,7 @@
       <!-- end info1 -->
       <div class="info-block">
         <div class="info-block-label">
-          <img src="image/max.png" alt="" srcset="">
+          <img src="images/max.png" alt="" srcset="">
           <span>Max</span>
         </div>
         <div class="info-block-value">
@@ -41,7 +57,7 @@
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/Humidity.png" alt="" srcset="">
+          <img src="images/Humidity.png" alt="" srcset="">
           <span>Humidity</span>
         </div>
         <div class="info-block-value">
@@ -50,7 +66,7 @@
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/wind.png" alt="" srcset="">
+          <img src="images/wind.png" alt="" srcset="">
           <span>Wind</span>
 
 
@@ -63,5 +79,5 @@
     <!-- end more content -->
   </div>
 </div>
-
-<router-outlet></router-outlet>
+</body>
+</html>
